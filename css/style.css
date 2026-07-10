@@ -1,0 +1,213 @@
+:root{
+  --cream:#F6EFE2;
+  --paper:#FBF7EE;
+  --ink:#3B2A1E;
+  --brown:#6B4A2E;
+  --mustard:#C9962C;
+  --clay:#B85C3B;
+  --line:#6B4A2E;
+  --nav: #d1e1e9;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Inter', sans-serif;
+  line-height:1.5;
+}
+h1,h2,h3, .display{
+  font-family:'Fraunces', serif;
+  font-weight:500;
+  letter-spacing:-0.01em;
+}
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:0.14em;
+  font-size:0.72rem;
+  font-weight:600;
+  color:var(--clay);
+}
+a{color:inherit; text-decoration:none;}
+img{max-width:100%; display:block;}
+.wrap{max-width:1120px; margin:0 auto; padding:0 32px;}
+
+/* placeholder image block — swap for <img src="tu-imagen.jpg"> */
+.ph{
+  background:repeating-linear-gradient(45deg, #3B2A1E14, #3B2A1E14 10px, #3B2A1E08 10px, #3B2A1E08 20px);
+  border:1px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--brown);
+  font-size:0.8rem;
+  text-align:center;
+  padding:12px;
+}
+
+/* NAV */
+header{
+  position:sticky; top:0; z-index:50;
+  background:var(--nav);
+  border-bottom:1.5px solid var(--line);
+}
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  max-width:1280px;
+  margin:0 auto;
+  padding:14px 32px;
+}
+.logo{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: .72;
+    letter-spacing: -.03em;
+    color: #7a5235
+}
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:26px;
+}
+.navlinks a{
+  font-family:"Inter", sans-serif;
+  font-size:18px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  color:var(--ink);
+  opacity:0.9;
+  transition:.2s;
+}
+
+.navlinks a:hover{
+  color:#7a5235;
+  opacity:1;
+}
+.cta-btn{
+  border:1px solid var(--ink);
+  padding:8px 16px;
+  border-radius:100px;
+  font-family:"Inter", sans-serif;
+  font-size:11px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+}
+.cta-btn:hover{background:var(--ink); color:var(--paper);}
+
+/* HERO */
+.hero{
+  padding:88px 32px 60px;
+  max-width:1120px; margin:0 auto;
+  display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center;
+}
+.hero h1{font-size:clamp(2.2rem, 4vw, 3.4rem); line-height:1.08; margin:14px 0 20px;}
+.hero p{max-width:44ch; opacity:0.85; margin-bottom:28px;}
+.btn-row{display:flex; gap:14px; flex-wrap:wrap;}
+.btn-solid{
+  background:var(--ink); color:var(--paper);
+  padding:14px 26px; border-radius:100px; font-weight:600; font-size:0.9rem;
+}
+.btn-outline{
+  border:1px solid var(--ink);
+  padding:14px 26px; border-radius:100px; font-weight:600; font-size:0.9rem;
+}
+.hero-img{aspect-ratio:4/5; border-radius:6px; overflow:hidden;}
+
+/* SECTION generic */
+section{padding:80px 0;}
+.section-head{text-align:center; max-width:640px; margin:0 auto 48px;}
+.section-head h2{font-size:clamp(1.8rem,3vw,2.4rem); margin-top:10px;}
+
+/* SERVICIOS */
+.servicios{border-top:1px solid var(--line);}
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:28px;
+}
+.card .ph{height:160px; border-radius:4px; margin-bottom:18px;}
+.card h3{font-size:1.15rem; margin-bottom:8px;}
+.card p{font-size:0.9rem; opacity:0.8;}
+
+/* TESTIMONIO */
+.testimonio{
+  background:var(--ink); color:var(--paper);
+}
+.testimonio .wrap{max-width:720px; text-align:center;}
+.quote{font-family:'Fraunces', serif; font-style:italic; font-size:clamp(1.2rem,2.3vw,1.6rem); line-height:1.4;}
+.quote-author{margin-top:20px; font-size:0.85rem; opacity:0.7;}
+.dots{display:flex; gap:8px; justify-content:center; margin-top:28px;}
+.dots span{width:6px; height:6px; border-radius:50%; background:var(--paper); opacity:0.35;}
+.dots span:first-child{opacity:1;}
+
+/* CURSO */
+.curso{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
+.curso .ph{aspect-ratio:1/1; border-radius:6px;}
+.lista-aprender li{
+  display:flex; gap:14px; padding:16px 0;
+  border-bottom:1px solid var(--line);
+  font-size:1rem;
+}
+.lista-aprender li span{color:var(--clay); font-family:'Fraunces',serif;}
+
+/* FICHA / bio */
+.ficha{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.ficha-card{
+  border:1px solid var(--ink);
+  border-radius:8px;
+  padding:40px;
+  display:grid; grid-template-columns:220px 1fr; gap:40px;
+  position:relative;
+}
+.ficha-card .ph{aspect-ratio:3/4; border-radius:4px;}
+.ficha-tag{
+  position:absolute; top:-14px; left:36px;
+  background:var(--mustard); color:var(--ink);
+  font-size:0.72rem; font-weight:700; letter-spacing:0.08em;
+  padding:5px 12px; border-radius:100px;
+}
+.ficha-row{margin-bottom:16px;}
+.ficha-row .eyebrow{display:block; margin-bottom:4px;}
+.ficha-row .value{font-family:'Fraunces',serif; font-size:1.2rem;}
+
+/* SOBRE MI */
+.sobremi{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+.sobremi p{margin-bottom:16px; opacity:0.85;}
+
+/* MARCAS / PORTFOLIO */
+.marcas .cards{grid-template-columns:repeat(3,1fr);}
+.marcas .ph{aspect-ratio:3/5; border-radius:4px;}
+.marcas figcaption{margin-top:10px; font-size:0.82rem; text-align:center; opacity:0.75;}
+
+/* FOOTER */
+footer{
+  background:var(--ink); color:var(--paper);
+  padding:56px 32px 28px;
+}
+.footer-grid{
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:32px;
+  max-width:1120px; margin:0 auto 32px;
+}
+.footer-links{display:flex; gap:24px; font-size:0.85rem; flex-wrap:wrap;}
+.footer-bottom{
+  max-width:1120px; margin:0 auto;
+  border-top:1px solid #ffffff22;
+  padding-top:20px;
+  font-size:0.78rem; opacity:0.6;
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+}
+
+@media (max-width:860px){
+  .navlinks{display:none;}
+  .hero, .curso, .sobremi{grid-template-columns:1fr;}
+  .hero{padding-top:64px;}
+  .cards{grid-template-columns:1fr;}
+  .ficha-card{grid-template-columns:1fr;}
+  .marcas .cards{grid-template-columns:repeat(3,1fr);}
+}
