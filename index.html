@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,181 +8,195 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <div class="logo">Solana<br>Cantero</div>
-    <div class="navlinks">
-      <a href="#servicios">Servicios</a>
-      <a href="#curso">Curso</a>
-      <a href="#sobremi">Sobre mí</a>
-      <a href="#marcas">Marcas</a>
-      <a href="#contacto">Contacto</a>
+  <header>
+    <nav>
+      <div class="logo">Solana<br>Cantero</div>
+      <div class="navlinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#curso">Curso</a>
+        <a href="#sobremi">Sobre mí</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <a href="#contacto" class="cta-btn">Agendá tu asesoría</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Las claves para que tu marca comunique todo lo que vale.</p>
+      <h1>Cada proyecto tiene una historia diferente. Mi trabajo es ayudarte a
+        convertirla en una identidad visual, una estrategia y una presencia digital
+        que generen resultados.</h1>
+      <p>Cada imagen personal es un caso por resolver. Tu estilo está a punto de ser descubierto.</p>
+      <div class="btn-row">
+        <a href="#contacto" class="btn-solid">Conocer mis servicios</a>
+        <a href="#curso" class="btn-outline">Contactarme</a>
+      </div>
     </div>
-    <a href="#contacto" class="cta-btn">Agendá tu asesoría</a>
-  </nav>
-</header>
+    <div class="ph hero-img">Imagen principal<br>(retrato vertical)</div>
+  </section>
 
-<!-- HERO -->
-<section class="hero">
-  <div>
-    <p class="eyebrow">Las claves para que tu marca comunique todo lo que vale.</p>
-    <h1>Cada proyecto tiene una historia diferente. Mi trabajo es ayudarte a
-convertirla en una identidad visual, una estrategia y una presencia digital
-que generen resultados.</h1>
-    <p>Cada imagen personal es un caso por resolver.  Tu estilo está a punto de ser descubierto.</p>
-    <div class="btn-row">
-      <a href="#contacto" class="btn-solid">Conocer mis servicios</a>
-      <a href="#curso" class="btn-outline">Contactarme</a>
-    </div>
-  </div>
-  <div class="ph hero-img">Imagen principal<br>(retrato vertical)</div>
-</section>
+  <!-- CARRUSEL -->
 
-<!-- CARRUSEL -->
-
-<section class="banner-scroll">
+  <section class="banner-scroll">
     <div class="scroll-track">
-        <img src="imagenes/barra.jpg" alt="carrousel">
-        <img src="imagenes/barra.jpg" alt="carrousel">
-        <img src="imagenes/barra.jpg" alt="carrousel">
+      <img src="imagenes/barra.jpg" alt="carrousel">
+      <img src="imagenes/barra.jpg" alt="carrousel">
+      <img src="imagenes/barra.jpg" alt="carrousel">
     </div>
-</section>
+  </section>
 
-<!--  MIS SERVICIOS -->
+  <!--  MIS SERVICIOS -->
 <section class="servicios" id="servicios">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Mis servicios</h2>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <div class="ph">Imagen servicio 1</div>
-        <h3>Nombre del servicio</h3>
-        <p>Breve descripción de en qué consiste este servicio y a quién está dirigido.</p>
-      </div>
-      <div class="card">
-        <div class="ph">Imagen servicio 2</div>
-        <h3>Nombre del servicio</h3>
-        <p>Breve descripción de en qué consiste este servicio y a quién está dirigido.</p>
-      </div>
-      <div class="card">
-        <div class="ph">Imagen servicio 3</div>
-        <h3>Nombre del servicio</h3>
-        <p>Breve descripción de en qué consiste este servicio y a quién está dirigido.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="wrap">
 
-<!-- TESTIMONIO -->
-<section class="testimonio">
-  <div class="wrap">
-    <p class="quote">"Espacio para una cita textual de una clienta o cliente satisfecho, contando su experiencia con vos."</p>
-    <p class="quote-author">Nombre Apellido, cargo o profesión</p>
-    <div class="dots"><span></span><span></span><span></span></div>
-  </div>
-</section>
-
-<!-- CURSO -->
-<section class="curso wrap" id="curso">
-  <div class="ph">Imagen o mockup del curso</div>
-  <div>
-    <p class="eyebrow">Aprendé a tu ritmo</p>
-    <h2>Vas a aprender a:</h2>
-    <ul class="lista-aprender">
-      <li><span>01</span> Primer punto de aprendizaje del curso.</li>
-      <li><span>02</span> Segundo punto de aprendizaje del curso.</li>
-      <li><span>03</span> Tercer punto de aprendizaje del curso.</li>
-      <li><span>04</span> Cuarto punto de aprendizaje del curso.</li>
-    </ul>
-    <div class="btn-row" style="margin-top:24px;">
-      <a href="#contacto" class="btn-solid">Sumate al curso</a>
-    </div>
-  </div>
-</section>
-
-<!-- FICHA / BIO -->
-<section class="ficha">
-  <div class="wrap">
-    <div class="ficha-card">
-      <span class="ficha-tag">Ficha 01</span>
-      <div class="ph">Foto</div>
-      <div>
-        <div class="ficha-row">
-          <span class="eyebrow">Nombre</span>
-          <span class="value">Nombre Apellido</span>
+        <div class="section-head">
+            <h2>Mis servicios</h2>
         </div>
-        <div class="ficha-row">
-          <span class="eyebrow">Especialidad</span>
-          <span class="value">Tu especialidad</span>
+
+        <div class="servicios-grid">
+
+            <div class="servicio">
+                <img src="imagenes/imagen-carpeta1.svg" alt="Expedientes">
+            </div>
+
+            <div class="servicio">
+                <img src="imagenes/imagen-carpeta2.svg" alt="Curso">
+            </div>
+
+            <div class="servicio">
+                <img src="imagenes/imagen-carpeta3.svg" alt="Asesoría">
+            </div>
+
+            <div class="servicio">
+                <img src="imagenes/imagen-carpeta4.svg" alt="Color Club">
+            </div>
+
         </div>
-        <div class="ficha-row">
-          <span class="eyebrow">Hobbie</span>
-          <span class="value">Algo personal y cercano</span>
+
+    </div>
+</section>
+
+  <!-- TESTIMONIO -->
+  <section class="testimonio">
+    <div class="wrap">
+      <p class="quote">"Espacio para una cita textual de una clienta o cliente satisfecho, contando su experiencia con
+        vos."</p>
+      <p class="quote-author">Nombre Apellido, cargo o profesión</p>
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <!-- CURSO -->
+  <section class="curso wrap" id="curso">
+    <div class="ph">Imagen o mockup del curso</div>
+    <div>
+      <p class="eyebrow">Aprendé a tu ritmo</p>
+      <h2>Vas a aprender a:</h2>
+      <ul class="lista-aprender">
+        <li><span>01</span> Primer punto de aprendizaje del curso.</li>
+        <li><span>02</span> Segundo punto de aprendizaje del curso.</li>
+        <li><span>03</span> Tercer punto de aprendizaje del curso.</li>
+        <li><span>04</span> Cuarto punto de aprendizaje del curso.</li>
+      </ul>
+      <div class="btn-row" style="margin-top:24px;">
+        <a href="#contacto" class="btn-solid">Sumate al curso</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FICHA / BIO -->
+  <section class="ficha">
+    <div class="wrap">
+      <div class="ficha-card">
+        <span class="ficha-tag">Ficha 01</span>
+        <div class="ph">Foto</div>
+        <div>
+          <div class="ficha-row">
+            <span class="eyebrow">Nombre</span>
+            <span class="value">Nombre Apellido</span>
+          </div>
+          <div class="ficha-row">
+            <span class="eyebrow">Especialidad</span>
+            <span class="value">Tu especialidad</span>
+          </div>
+          <div class="ficha-row">
+            <span class="eyebrow">Hobbie</span>
+            <span class="value">Algo personal y cercano</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SOBRE MI -->
-<section class="sobremi wrap" id="sobremi">
-  <div class="ph" style="aspect-ratio:4/5; border-radius:6px;">Foto sobre mí</div>
-  <div>
-    <p class="eyebrow">Mi historia</p>
-    <h2>Sobre mí</h2>
-    <p>Párrafo contando el origen de tu trabajo, qué te llevó a dedicarte a esto y qué mirada tenés sobre tu profesión.</p>
-    <p>Segundo párrafo contando a quién ayudás hoy y cuál es tu misión con las personas o marcas con las que trabajás.</p>
-    <a href="#contacto" class="btn-outline" style="display:inline-block; margin-top:8px;">Quiero saber más</a>
-  </div>
-</section>
+  <!-- SOBRE MI -->
+  <section class="sobremi wrap" id="sobremi">
+    <div class="ph" style="aspect-ratio:4/5; border-radius:6px;">Foto sobre mí</div>
+    <div>
+      <p class="eyebrow">Mi historia</p>
+      <h2>Sobre mí</h2>
+      <p>Párrafo contando el origen de tu trabajo, qué te llevó a dedicarte a esto y qué mirada tenés sobre tu
+        profesión.</p>
+      <p>Segundo párrafo contando a quién ayudás hoy y cuál es tu misión con las personas o marcas con las que trabajás.
+      </p>
+      <a href="#contacto" class="btn-outline" style="display:inline-block; margin-top:8px;">Quiero saber más</a>
+    </div>
+  </section>
 
-<!-- MARCAS -->
-<section class="marcas" id="marcas">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Trabajo con marcas</p>
-      <h2>Portfolio</h2>
+  <!-- MARCAS -->
+  <section class="marcas" id="marcas">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Trabajo con marcas</p>
+        <h2>Portfolio</h2>
+      </div>
+      <div class="cards">
+        <figure>
+          <div class="ph">Imagen 1</div>
+          <figcaption>Categoría / marca</figcaption>
+        </figure>
+        <figure>
+          <div class="ph">Imagen 2</div>
+          <figcaption>Categoría / marca</figcaption>
+        </figure>
+        <figure>
+          <div class="ph">Imagen 3</div>
+          <figcaption>Categoría / marca</figcaption>
+        </figure>
+      </div>
     </div>
-    <div class="cards">
-      <figure>
-        <div class="ph">Imagen 1</div>
-        <figcaption>Categoría / marca</figcaption>
-      </figure>
-      <figure>
-        <div class="ph">Imagen 2</div>
-        <figcaption>Categoría / marca</figcaption>
-      </figure>
-      <figure>
-        <div class="ph">Imagen 3</div>
-        <figcaption>Categoría / marca</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer id="contacto">
-  <div class="footer-grid">
-    <div class="logo" style="color:var(--paper);">Nombre Apellido</div>
-    <div class="footer-links">
-      <a href="#sobremi">Sobre mí</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#curso">Curso</a>
-      <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a>
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <div class="footer-grid">
+      <div class="logo" style="color:var(--paper);">Nombre Apellido</div>
+      <div class="footer-links">
+        <a href="#sobremi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#curso">Curso</a>
+        <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a>
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Nombre Apellido</span>
-    <span>Instagram · TikTok · WhatsApp</span>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <span>© 2026 Nombre Apellido</span>
+      <span>Instagram · TikTok · WhatsApp</span>
+    </div>
+  </footer>
 
 </body>
+
 </html>
