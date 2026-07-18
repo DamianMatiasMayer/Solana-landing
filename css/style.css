@@ -183,16 +183,76 @@ section{padding:80px 0;}
     display: block;
 }
 
-/* TESTIMONIO */
+/* TESTIMONIO CARROUSEL */
 .testimonio{
-  background:var(--ink); color:var(--paper);
+    background:#5d3827;
+    padding:80px 0;
+    overflow:hidden;
 }
-.testimonio .wrap{max-width:720px; text-align:center;}
-.quote{font-family:'Fraunces', serif; font-style:italic; font-size:clamp(1.2rem,2.3vw,1.6rem); line-height:1.4;}
-.quote-author{margin-top:20px; font-size:0.85rem; opacity:0.7;}
-.dots{display:flex; gap:8px; justify-content:center; margin-top:28px;}
-.dots span{width:6px; height:6px; border-radius:50%; background:var(--paper); opacity:0.35;}
-.dots span:first-child{opacity:1;}
+
+.quote{
+    color:#f5eddc;
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:60px;
+}
+
+.quote em{
+    font-style:italic;
+}
+
+.testimonio-slider{
+    overflow:hidden;
+    width:100%;
+     padding:20px 0;
+}
+
+.testimonio-track{
+    display:flex;
+    gap:30px;
+    width:fit-content;
+    animation:slider 35s linear infinite;
+}
+
+.testimonio-track img:nth-child(odd){
+    transform:rotate(-2deg);
+}
+
+.testimonio-track img:nth-child(even){
+    transform:rotate(2deg);
+}
+
+.testimonio-track img:hover{
+    transform:rotate(0deg) scale(1.08);
+}
+
+/* Se frena al pasar el mouse */
+
+.testimonio-track:hover{
+    animation-play-state:paused;
+}
+
+.testimonio-track img{
+    width:300px;
+    flex-shrink:0;
+    transition:.3s;
+}
+
+.testimonio-track img:hover{
+    transform:scale(1.05);
+}
+
+@keyframes slider{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
 
 /* CURSO */
 .curso{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
