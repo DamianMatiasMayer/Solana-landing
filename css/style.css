@@ -129,16 +129,20 @@ section{padding:80px 0;}
 
 /* CARRUSEL */
 
+/* CARRUSEL */
+
 .banner-scroll{
     width:100%;
     overflow:hidden;
     background:#f8efe7;   
+    line-height: 0; /* Elimina cualquier espacio invisible debajo de las imágenes */
+    margin: 0;
+    padding: 0;
 }
-
 .scroll-track{
     display:flex;
     width:max-content;
-    animation:scroll 15s linear infinite;
+    animation:scroll 25s linear infinite;
 }
 
 .scroll-track img{
@@ -184,9 +188,10 @@ section{padding:80px 0;}
 }
 
 /* TESTIMONIO CARROUSEL */
+
 .testimonio{
     background:#5d3827;
-    padding:80px 0;
+    padding:80px 45px 180px;
     overflow:hidden;
 }
 
@@ -204,12 +209,12 @@ section{padding:80px 0;}
 .testimonio-slider{
     overflow:hidden;
     width:100%;
-     padding:20px 0;
+    padding:20px 0;
 }
 
 .testimonio-track{
     display:flex;
-    gap:30px;
+    gap:20px;
     width:fit-content;
     animation:slider 35s linear infinite;
 }
@@ -254,36 +259,105 @@ section{padding:80px 0;}
 
 }
 
-/* CURSO */
-.curso{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
-.curso .ph{aspect-ratio:1/1; border-radius:6px;}
-.lista-aprender li{
-  display:flex; gap:14px; padding:16px 0;
-  border-bottom:1px solid var(--line);
-  font-size:1rem;
-}
-.lista-aprender li span{color:var(--clay); font-family:'Fraunces',serif;}
 
-/* FICHA / bio */
-.ficha{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
-.ficha-card{
-  border:1px solid var(--ink);
-  border-radius:8px;
-  padding:40px;
-  display:grid; grid-template-columns:220px 1fr; gap:40px;
-  position:relative;
-}
-.ficha-card .ph{aspect-ratio:3/4; border-radius:4px;}
-.ficha-tag{
-  position:absolute; top:-14px; left:36px;
-  background:var(--mustard); color:var(--ink);
-  font-size:0.72rem; font-weight:700; letter-spacing:0.08em;
-  padding:5px 12px; border-radius:100px;
-}
-.ficha-row{margin-bottom:16px;}
-.ficha-row .eyebrow{display:block; margin-bottom:4px;}
-.ficha-row .value{font-family:'Fraunces',serif; font-size:1.2rem;}
 
+/* FICHA / BIO */
+
+.ficha {
+  background-image: url('../imagenes/fondo.iconos.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Dirección vertical para empujar el carrusel al fondo exacto */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Relleno superior de la sección (140px arriba, 0 abajo) */
+  padding: 210px 0 0 0; 
+}
+
+/* Margen inferior para distanciar la tarjeta blanca de la barra del carrusel */
+.ficha .wrap {
+  width: 100%;
+  margin-bottom: 210px; /* Si querés más o menos espacio entre la ficha y la barra, ajustá este valor */
+}
+
+/* LA TARJETA FICHA (Más grande) */
+.ficha-card {
+  position: relative;
+  background-color: #FBF7EE;
+  border-radius: 40px;
+  
+  /* Más espacio por dentro */
+  padding: 70px 85px; 
+  
+  width: 100%;
+  /* Agrandamos la tarjeta horizontalmente */
+  max-width: 800px; 
+  
+  margin: 0 auto;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* --- ESTILOS DEL CLIP SOBREPESTO --- */
+.ficha-clip {
+  position: absolute;
+  top: -50px;           /* Posición vertical sobresaliendo */
+  right: 28%;           /* Posición horizontal */
+  width: 60px;          /* Ancho del clip */
+  height: auto;
+  z-index: 10;
+  
+  /* Ligero giro para mayor naturalidad */
+  transform: rotate(-10deg);
+  
+  /* Transición suave por si querés agregar efectos al pasar el mouse */
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Encabezado (FICHA 01 - AÑO 2026) */
+.ficha-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #7a5235;
+  margin-bottom: 45px;
+}
+
+/* Filas de texto */
+.ficha-row {
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(122, 82, 53, 0.25);
+  padding-bottom: 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+/* Etiquetas (NOMBRE / ESPECIALIDAD) */
+.ficha-row .eyebrow {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #7a5235;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* Letra manuscrita */
+.ficha-row .value-script {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem; /* Letra manuscrita mucho más grande */
+  line-height: 1;
+  color: #5C3A21;
+}
 /* SOBRE MI */
 .sobremi{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
 .sobremi p{margin-bottom:16px; opacity:0.85;}

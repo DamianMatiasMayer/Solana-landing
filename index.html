@@ -14,6 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Inter:wght@100..900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -60,112 +61,150 @@
   </section>
 
   <!--  MIS SERVICIOS -->
-<section class="servicios" id="servicios">
+  <section class="servicios" id="servicios">
     <div class="wrap">
 
-        <div class="section-head">
-            <h2>Mis servicios</h2>
+      <div class="section-head">
+        <h2>Mis servicios</h2>
+      </div>
+
+      <div class="servicios-grid">
+
+        <div class="servicio">
+          <img src="imagenes/imagen-carpeta1.svg" alt="Expedientes">
         </div>
 
-        <div class="servicios-grid">
-
-            <div class="servicio">
-                <img src="imagenes/imagen-carpeta1.svg" alt="Expedientes">
-            </div>
-
-            <div class="servicio">
-                <img src="imagenes/imagen-carpeta2.svg" alt="Curso">
-            </div>
-
-            <div class="servicio">
-                <img src="imagenes/imagen-carpeta3.svg" alt="Asesoría">
-            </div>
-
-            <div class="servicio">
-                <img src="imagenes/imagen-carpeta4.svg" alt="Color Club">
-            </div>
-
+        <div class="servicio">
+          <img src="imagenes/imagen-carpeta2.svg" alt="Curso">
         </div>
+
+        <div class="servicio">
+          <img src="imagenes/imagen-carpeta3.svg" alt="Asesoría">
+        </div>
+
+        <div class="servicio">
+          <img src="imagenes/imagen-carpeta4.svg" alt="Color Club">
+        </div>
+
+      </div>
 
     </div>
-</section>
+  </section>
 
-<!-- TESTIMONIO CARROUSEL -->
-<section class="testimonio">
+  <!-- TESTIMONIO CARROUSEL -->
+  <section class="testimonio">
 
     <h2 class="quote">
-        Contame si esta persona <em>sos vos...</em>
+      Contame si esta persona <em>sos vos...</em>
     </h2>
 
     <div class="testimonio-slider">
 
-        <div class="testimonio-track">
+      <div class="testimonio-track">
 
-            <!-- Primera vuelta -->
-            <img src="imagenes/frase1.jpg" alt="">
-            <img src="imagenes/frases-13.jpg" alt="">
-            <img src="imagenes/frases-14.jpg" alt="">
-            <img src="imagenes/frases-15.jpg" alt="">
-            <img src="imagenes/frases-16.jpg" alt="">
-            
+        <!-- Primera vuelta -->
+        <img src="imagenes/frase1.jpg" alt="">
+        <img src="imagenes/frases-13.jpg" alt="">
+        <img src="imagenes/frases-14.jpg" alt="">
+        <img src="imagenes/frases-15.jpg" alt="">
+        <img src="imagenes/frases-16.jpg" alt="">
 
-            <!-- Se repiten para que nunca termine -->
-            <img src="imagenes/frases-17.jpg" alt="">
-            <img src="imagenes/frases-18.jpg" alt="">
-            <img src="imagenes/frases-19.jpg" alt="">
-            <img src="imagenes/frase1.jpg" alt="">
-            <img src="imagenes/frases-13.jpg" alt="">
-            <img src="imagenes/frases-14.jpg" alt="">
-            <img src="imagenes/frases-15.jpg" alt="">
-            <img src="imagenes/frases-16.jpg" alt="">
 
-        </div>
+        <!-- Se repiten para que nunca termine -->
+        <img src="imagenes/frases-17.jpg" alt="">
+        <img src="imagenes/frases-18.jpg" alt="">
+        <img src="imagenes/frases-19.jpg" alt="">
+        <img src="imagenes/frase1.jpg" alt="">
+        <img src="imagenes/frases-13.jpg" alt="">
+        <img src="imagenes/frases-14.jpg" alt="">
+        <img src="imagenes/frases-15.jpg" alt="">
+        <img src="imagenes/frases-16.jpg" alt="">
 
-    </div>
-
-</section>
-
-  <!-- CURSO -->
-  <section class="curso wrap" id="curso">
-    <div class="ph">Imagen o mockup del curso</div>
-    <div>
-      <p class="eyebrow">Aprendé a tu ritmo</p>
-      <h2>Vas a aprender a:</h2>
-      <ul class="lista-aprender">
-        <li><span>01</span> Primer punto de aprendizaje del curso.</li>
-        <li><span>02</span> Segundo punto de aprendizaje del curso.</li>
-        <li><span>03</span> Tercer punto de aprendizaje del curso.</li>
-        <li><span>04</span> Cuarto punto de aprendizaje del curso.</li>
-      </ul>
-      <div class="btn-row" style="margin-top:24px;">
-        <a href="#contacto" class="btn-solid">Sumate al curso</a>
       </div>
+
     </div>
+
   </section>
 
   <!-- FICHA / BIO -->
   <section class="ficha">
     <div class="wrap">
+
+      <!-- TARJETA PURA EN HTML -->
       <div class="ficha-card">
-        <span class="ficha-tag">Ficha 01</span>
-        <div class="ph">Foto</div>
-        <div>
-          <div class="ficha-row">
-            <span class="eyebrow">Nombre</span>
-            <span class="value">Nombre Apellido</span>
-          </div>
-          <div class="ficha-row">
-            <span class="eyebrow">Especialidad</span>
-            <span class="value">Tu especialidad</span>
-          </div>
-          <div class="ficha-row">
-            <span class="eyebrow">Hobbie</span>
-            <span class="value">Algo personal y cercano</span>
-          </div>
+        
+
+        <!-- CLIP SVG FLOTANTE (Sin fondo y personalizable) -->
+        <svg class="ficha-clip" viewBox="0 0 100 280" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <!-- Degradado metálico plata realista -->
+            <linearGradient id="metal-silver" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e0e0e0" />
+              <stop offset="25%" stop-color="#ffffff" />
+              <stop offset="50%" stop-color="#8e8e8e" />
+              <stop offset="75%" stop-color="#d6d6d6" />
+              <stop offset="100%" stop-color="#5a5a5a" />
+            </linearGradient>
+
+            <!-- Filtro de sombra flotante 3D -->
+            <filter id="clip-3d-shadow" x="-20%" y="-20%" width="150%" height="150%">
+              <feDropShadow dx="4" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.3" />
+            </filter>
+          </defs>
+
+          <!-- 1. Sombra interna para simular volumen metálico redondo -->
+          <path
+            d="M 50,20 C 25,20 15,45 15,75 L 15,220 C 15,255 35,270 50,270 C 65,270 85,255 85,220 L 85,55 C 85,35 70,25 55,25 C 40,25 30,35 30,55 L 30,195 C 30,210 40,220 50,220 C 60,220 70,210 70,195 L 70,80"
+            fill="none" stroke="#3a3a3a" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"
+            filter="url(#clip-3d-shadow)" />
+
+          <!-- 2. Cuerpo metálico con degradado -->
+          <path
+            d="M 50,20 C 25,20 15,45 15,75 L 15,220 C 15,255 35,270 50,270 C 65,270 85,255 85,220 L 85,55 C 85,35 70,25 55,25 C 40,25 30,35 30,55 L 30,195 C 30,210 40,220 50,220 C 60,220 70,210 70,195 L 70,80"
+            fill="none" stroke="url(#metal-silver)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+
+          <!-- 3. Brillo metálico blanco en el centro del alambre -->
+          <path
+            d="M 50,20 C 25,20 15,45 15,75 L 15,220 C 15,255 35,270 50,270 C 65,270 85,255 85,220 L 85,55 C 85,35 70,25 55,25 C 40,25 30,35 30,55 L 30,195 C 30,210 40,220 50,220 C 60,220 70,210 70,195 L 70,80"
+            fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            opacity="0.8" />
+        </svg>
+        <!-- Encabezado superior -->
+        <div class="ficha-header">
+          <span>FICHA 01</span>
+          <span>AÑO 2026</span>
         </div>
+        
+
+        <!-- Cuerpo con la información -->
+        <div class="ficha-body">
+
+          <div class="ficha-row">
+            <span class="eyebrow">NOMBRE:</span>
+            <span class="value-script">Solana Cantero</span>
+          </div>
+
+          <div class="ficha-row">
+            <span class="eyebrow">ESPECIALIDAD:</span>
+            <span class="value-script">CM & Diseño Gráfico</span>
+          </div>
+
+        </div>
+        
+      </div>
+        
+    </div>
+
+    <!-- EL CARRUSEL AHORA ESTÁ ADENTRO, JUSTO AL FINAL DE LA SECCIÓN -->
+    <div class="banner-scroll">
+      <div class="scroll-track">
+        <img src="imagenes/barra.jpg" alt="carrousel">
+        <img src="imagenes/barra.jpg" alt="carrousel">
+        <img src="imagenes/barra.jpg" alt="carrousel">
       </div>
     </div>
   </section>
+
 
   <!-- SOBRE MI -->
   <section class="sobremi wrap" id="sobremi">
@@ -221,6 +260,14 @@
       <span>Instagram · TikTok · WhatsApp</span>
     </div>
   </footer>
+
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+  <script src="js/main.js"></script>
+
 
 </body>
 
