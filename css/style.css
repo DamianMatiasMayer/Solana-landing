@@ -179,7 +179,7 @@ section{padding:80px 0;}
 
 .servicio{
     width: 450px;
-    border: 1px solid red;
+    
 }
 
 .servicio img{
@@ -190,8 +190,8 @@ section{padding:80px 0;}
 /* TESTIMONIO CARROUSEL */
 
 .testimonio{
-    background:#5d3827;
-    padding:80px 45px 180px;
+    background:#5f3b2b;
+    padding:80px 0px 180px;
     overflow:hidden;
 }
 
