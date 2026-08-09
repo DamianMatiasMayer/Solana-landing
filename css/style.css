@@ -11,7 +11,7 @@
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
 body{
-  background:var(--cream);
+  
   color:var(--ink);
   font-family:'Inter', sans-serif;
   line-height:1.5;
@@ -164,6 +164,7 @@ section{padding:80px 0;}
 /* SERVICIOS */
 .servicios{
     padding-top:30px;
+    background:var(--cream);
 }
 
 .servicios h2{
@@ -179,12 +180,16 @@ section{padding:80px 0;}
 
 .servicio{
     width: 450px;
-    
+
 }
 
 .servicio img{
     width: 100%;
     display: block;
+}
+
+.servicio:nth-child(4){
+    transform: translateY(-10px);
 }
 
 /* TESTIMONIO CARROUSEL */
@@ -331,6 +336,7 @@ section{padding:80px 0;}
   margin-bottom: 45px;
 }
 
+
 /* Filas de texto */
 .ficha-row {
   margin-bottom: 32px;
@@ -340,6 +346,7 @@ section{padding:80px 0;}
   align-items: baseline;
   gap: 20px;
 }
+
 
 /* Etiquetas (NOMBRE / ESPECIALIDAD) */
 .ficha-row .eyebrow {
@@ -351,6 +358,7 @@ section{padding:80px 0;}
   flex-shrink: 0;
 }
 
+
 /* Letra manuscrita */
 .ficha-row .value-script {
   font-family: 'Caveat', cursive;
@@ -358,9 +366,189 @@ section{padding:80px 0;}
   line-height: 1;
   color: #5C3A21;
 }
-/* SOBRE MI */
-.sobremi{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
-.sobremi p{margin-bottom:16px; opacity:0.85;}
+
+
+/* =========================
+   SOBRE MI
+========================= */
+
+.sobremi {
+  position: relative;
+  padding: 100px 0;
+
+  background-image: url('../imagenes/fondosrayados-09.jpg');
+
+  /* Hace que cada repetición sea más angosta */
+  background-size: 30% auto;
+
+  /* Repite el patrón horizontal y verticalmente */
+  background-repeat: repeat;
+
+  background-position: top left;
+}
+
+.sobremi-contenido {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* TARJETA */
+
+.sobremi-card {
+  position: relative;
+  width: 540px;
+  margin-left: 100px;
+  padding: 70px 70px 80px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  box-sizing: border-box;
+}
+
+/* TEXTO */
+
+.sobremi-texto {
+  position: relative;
+  z-index: 1;
+}
+
+.sobremi-texto h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 20px 0 25px;
+}
+
+.sobremi-texto p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 430px;
+  margin-bottom: 25px;
+}
+
+.sobremi-texto .eyebrow {
+  margin-bottom: 0;
+}
+
+/* FOTO */
+
+.foto-sobremi {
+  position: absolute;
+
+  /* La ponemos encima de la tarjeta */
+  z-index: 10;
+
+  /* Posición sobre la esquina izquierda */
+  left: 0;
+  top: -35px;
+
+  width: 260px;
+  height: 320px;
+
+  object-fit: cover;
+
+  /* Inclinación como en la referencia */
+  transform: rotate(5deg);
+
+  border: 2px solid #222;
+  box-sizing: border-box;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.imagen-flotante {
+  position: absolute;
+  z-index: 20;
+
+  /* abajo y centrada respecto a la foto */
+  left: 50px;
+  top: 250px;
+
+  width: 200px;
+  height: auto;
+
+  transform: rotate(-5deg);
+
+  pointer-events: none;
+}
+/* IMAGEN DE ABAJO */
+
+.sello-sobremi{
+    position:absolute;
+
+    width:150px;
+
+    left:70px;
+    top:330px;
+
+    transform:rotate(-3deg);
+
+    z-index:3;
+}
+
+/* FICHA BLANCA */
+
+.sobremi-ficha{
+    background:#FBF7EE;
+
+    min-height:500px;
+
+    padding:55px 50px 45px;
+
+    border:1px solid #3B2A1E;
+
+    position:relative;
+
+    z-index:1;
+}
+
+/* TÍTULO */
+
+.sobremi-ficha h2{
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:3rem;
+    font-weight:500;
+
+    margin-bottom:25px;
+}
+
+/* TEXTOS */
+
+.sobremi-ficha p{
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:1rem;
+
+    line-height:1.45;
+
+    margin-bottom:20px;
+
+    opacity:0.9;
+}
+
+/* PARTE FINAL */
+
+.sobremi-final{
+    text-align:center;
+
+    margin-top:35px;
+}
+
+.sobremi-final p{
+    font-size:1.3rem;
+
+    margin-bottom:10px;
+}
+
+/* BOTÓN */
+
+.sobremi-final .btn-solid{
+    display:inline-block;
+
+    margin-left:0;
+}
+
 
 /* MARCAS / PORTFOLIO */
 .marcas .cards{grid-template-columns:repeat(3,1fr);}
